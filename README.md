@@ -1,6 +1,19 @@
 # Margay
 An interactive Web-based tutorial platform for the D3.js javascript library
 
+## Dependencies
+
+- Install Node.js and npm (https://nodejs.org/en/)
+- Install React Bootstrap
+    - Run `npm install react-bootstrap bootstrap` in the margay-app directory
+    - More info (https://react-bootstrap.github.io/getting-started/introduction)
+
+## To Run the Margay App
+
+1. Run `cd margay-app`
+2. Run `npm start`
+3. Check Dependencies for any errors
+
 ## Learning Objectives
 
 1. Apply new concepts learned throughout the RLO to create and refactor d3.js code 
