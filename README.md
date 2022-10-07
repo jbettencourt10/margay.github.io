@@ -19,7 +19,7 @@ An interactive Web-based tutorial platform for the D3.js javascript library
 1. Apply new concepts learned throughout the RLO to create and refactor d3.js code 
 2. Refactor for-loop-based d3.js code using functional approaches
 
-### Concepts
+## Concepts
 
 1. Using d3.js methods
     e.g. `select()`, `selectAll()`, `enter()`, `exit()`, `append()`, `attr()`, `text()`, `style()`
