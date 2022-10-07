@@ -12,9 +12,9 @@ import './App.css';
 function App() {
   return (
     <>
-      <Navbar className='mx-auto' sticky='top'>
+      <Navbar className='mx-auto' bg='dark' variant='dark' sticky='top'>
       <Nav >
-          <NavLink className='nav-link page-logo active' to="/"></NavLink>
+          <NavLink className='nav-link page-logo' to="/"></NavLink>
           <NavLink className='nav-link' to="/" ><h5 style={{marginTop: 10}}>Home</h5></NavLink>
           <NavLink className='nav-link active' to="/playground" ><h5 style={{marginTop: 10}}>Playground</h5></NavLink>
         </Nav>
