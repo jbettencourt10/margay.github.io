@@ -1,8 +1,8 @@
 D3.js provides several unique functions that you may use when creating data visualizations.
 
-In this exercise, we will cover several of the most common d3.js functions.
+### In this exercise, we will cover several of the most common d3.js functions.
 
-Selecting 
+## Selecting 
 
 The select() method:
 
