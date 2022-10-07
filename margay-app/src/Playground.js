@@ -15,14 +15,14 @@ function App() {
       <Navbar className='mx-auto' sticky='top'>
       <Nav >
           <NavLink className='nav-link page-logo active' to="/"></NavLink>
-          <NavLink className='nav-link active' to="/" ><h5 style={{marginTop: 10}}>Home</h5></NavLink>
-          <NavLink className='nav-link' to="/playground" ><h5 style={{marginTop: 10}}>Playground</h5></NavLink>
+          <NavLink className='nav-link' to="/" ><h5 style={{marginTop: 10}}>Home</h5></NavLink>
+          <NavLink className='nav-link active' to="/playground" ><h5 style={{marginTop: 10}}>Playground</h5></NavLink>
         </Nav>
       </Navbar>
       <div className="App">
         <header className="App-header">
           <p>
-            Welcome to Margay.
+            Welcome to the Margay Playground.
           </p>
         </header>
       </div>
