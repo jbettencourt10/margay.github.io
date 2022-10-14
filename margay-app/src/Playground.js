@@ -7,13 +7,30 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavLink } from "react-router-dom";
 
-import Editor from 'react-run-code';
+import Editor from '@monaco-editor/react';
+
+import {Ghost} from 'react-kawaii';
+import {VM} from 'vm2';
 
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function Playground() {
+  function handleEditorChange(value, event) {
+    try{
+      VM().run(value);
+    } catch (err){
+      console.log(err)
+    }
+  }
+
+  function handleEditorValidation(markers) {
+    console.log(markers)
+    // model markers
+    markers.forEach(marker => console.log("onValidate:", marker.message));
+  }
+
   return (
     <>
       <Navbar bg='dark' variant='dark' sticky='top'>
@@ -37,7 +54,15 @@ function Playground() {
           </Row>
           <Row>
             <Col xs={12} lg={6}>
-              <Editor id='10' modelsInfo={[]}/>
+              <Editor 
+                height='90vh'
+                defaultLanguage='javascript'
+                defaultValue='//Test out your code here'
+                //onChange={handleEditorChange}
+                onChange={handleEditorChange}
+                theme='vs-dark'
+                loading=<Ghost size={300} mood='shocked' color='#FDA7DC'/>
+              />
             </Col>
             <Col>
               <p>Output will appear here.</p>

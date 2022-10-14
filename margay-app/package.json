@@ -3,17 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@monaco-editor/react": "^4.4.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.2",
+    "fs": "^0.0.1-security",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
+    "react-kawaii": "^0.18.0",
     "react-router-dom": "^6.4.2",
-    "react-run-code": "^0.2.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "safe-eval": "^0.4.1",
+    "vm2": "^3.9.11",
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   },
   "scripts": {
     "start": "react-scripts start",
