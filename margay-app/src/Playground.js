@@ -1,7 +1,6 @@
 import './App.css';
 
 import {Container, Row, Col} from 'react-bootstrap';
-import debounce from 'lodash.debounce';
 
 //Navbar imports
 import Nav from 'react-bootstrap/Nav';
@@ -40,9 +39,14 @@ class Playground extends React.Component{
       }
     }
 
-    function handleEditorChange(value) {
-      currVal = value;
+    function clearSVG(){
+      let script3 = document.createElement("script");
+      script3.innerHTML = `function temp(){d3.select('#out').selectAll('*').remove()}; temp()`;
+      document.body.appendChild(script3);
+      script3.remove()
     }
+
+    function handleEditorChange(value) { currVal = value; }
     
     return (
       <>
@@ -67,6 +71,7 @@ class Playground extends React.Component{
               <Col xs={12} lg={6}>
                 <h6>Use the code editor below to write your own code.</h6>
                 <button onClick={runCode}>Run Code</button>
+                <button onClick={clearSVG}>Clear SVG</button>
                 <Editor 
                   id='playground_editor'
                   height='90vh'
