@@ -19,17 +19,9 @@ import React, { useMemo } from 'react';
 
 class Playground extends React.Component{
 
-  componentDidMount () {
-    const script = document.createElement("script");
-    script.src = "https://d3js.org/d3.v7.min.js";
-    script.async = true;
-    document.head.appendChild(script);
-  }
 
   render(){
     var currVal;
-
-    this.componentDidMount();
 
     function runCode(){
       try{ let func = new Function("d3",currVal); func(d3); } catch (err){ console.log(err) }
