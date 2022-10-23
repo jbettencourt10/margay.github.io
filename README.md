@@ -7,6 +7,9 @@ An interactive Web-based tutorial platform for the D3.js javascript library
 - Install React Bootstrap
     - Run `npm install react-bootstrap bootstrap` in the margay-app directory
     - More info (https://react-bootstrap.github.io/getting-started/introduction)
+- Install React-Run-Code
+    - Run `npm install react-run-code`
+    - More info (https://github.com/MatthewCaseres/react-run-code)
 
 ## To Run the Margay App
 
