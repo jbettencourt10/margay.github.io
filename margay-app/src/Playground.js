@@ -18,8 +18,6 @@ import './App.css';
 import React, { useMemo } from 'react';
 
 class Playground extends React.Component{
-
-
   render(){
     var currVal;
 
@@ -54,9 +52,13 @@ class Playground extends React.Component{
             </Row>
             <Row>
               <Col xs={12} lg={6}>
-                <h6>Use the code editor below to write your own code.</h6>
-                <button onClick={runCode}>Run Code</button>
-                <button onClick={clearSVG}>Clear SVG</button>
+                <span style={{float: 'left'}}><h6>Write your own code.</h6></span>
+                <span style={{float: 'right'}}>
+                  
+                  <button className='btn btn-success' onClick={runCode}>Run Code</button>
+                  <button className='btn btn-danger' onClick={clearSVG}>Clear SVG</button>
+                </span>
+                
                 <Editor
                   id='playground_editor'
                   height='90vh'
