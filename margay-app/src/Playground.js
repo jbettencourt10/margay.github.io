@@ -17,7 +17,7 @@ import './App.css';
 import React, { useMemo } from 'react';
 
 class Playground extends React.Component{
-  
+
   componentDidMount () {
     const script = document.createElement("script");
     script.src = "https://d3js.org/d3.v7.min.js";
@@ -27,7 +27,7 @@ class Playground extends React.Component{
 
   render(){
     var currVal;
-
+    this.componentDidMount();
     function runCode(){
       try{
         let script2 = document.createElement("script");
@@ -47,7 +47,7 @@ class Playground extends React.Component{
     }
 
     function handleEditorChange(value) { currVal = value; }
-    
+
     return (
       <>
         <Navbar bg='dark' variant='dark' sticky='top'>
@@ -65,14 +65,14 @@ class Playground extends React.Component{
                 Welcome to the Margay Playground.
               </p>
             </header>
-            
+
             </Row>
             <Row>
               <Col xs={12} lg={6}>
                 <h6>Use the code editor below to write your own code.</h6>
                 <button onClick={runCode}>Run Code</button>
                 <button onClick={clearSVG}>Clear SVG</button>
-                <Editor 
+                <Editor
                   id='playground_editor'
                   height='90vh'
                   defaultLanguage='javascript'
@@ -89,16 +89,16 @@ class Playground extends React.Component{
               </Col>
             </Row>
           </Container>
-          
-  
-          
+
+
+
         </div>
-        
+
       </>
-      
+
     );
   }
-  
+
 }
 
 export default Playground;
