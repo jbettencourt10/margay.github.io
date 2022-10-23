@@ -1,6 +1,7 @@
 import './App.css';
 
 import {Container, Row, Col} from 'react-bootstrap';
+import * as d3 from 'd3';
 
 //Navbar imports
 import Nav from 'react-bootstrap/Nav';
@@ -27,23 +28,15 @@ class Playground extends React.Component{
 
   render(){
     var currVal;
+
     this.componentDidMount();
+
     function runCode(){
-      try{
-        let script2 = document.createElement("script");
-        script2.innerHTML = `function temp(){${currVal}}; temp()`;
-        document.body.appendChild(script2);
-        script2.remove()
-      } catch (err){
-        console.log(err)
-      }
+      try{ let func = new Function("d3",currVal); func(d3); } catch (err){ console.log(err) }
     }
 
     function clearSVG(){
-      let script3 = document.createElement("script");
-      script3.innerHTML = `function temp(){d3.select('#out').selectAll('*').remove()}; temp()`;
-      document.body.appendChild(script3);
-      script3.remove()
+      d3.select('#out').selectAll('*').remove()
     }
 
     function handleEditorChange(value) { currVal = value; }
