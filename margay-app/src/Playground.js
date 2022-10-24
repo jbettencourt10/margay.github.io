@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Container, Row, Col} from 'react-bootstrap';
 import * as d3 from 'd3';
-import { Console, Hook, Decode } from 'console-feed'
+import { Console, Hook, Decode } from 'console-feed';
 
 import { Link } from "react-router-dom";
 
@@ -47,7 +47,7 @@ class Playground extends React.Component{
             <Row>
             <header className="App-header">
               <p>
-                Welcome to the Margay Playground.
+                Welcome to the Margay Playground
               </p>
             </header>
             </Row>
@@ -58,13 +58,10 @@ class Playground extends React.Component{
             </Row>
             <Row>
               <Col xs={12} lg={6}>
-                <span style={{float: 'left'}}><h6>Write your own code.</h6></span>
-                <span style={{float: 'right'}}>
-                  
+                <span style={{float: 'center'}}>
                   <button className='btn btn-success' style={{marginRight: 10}} onClick={runCode}>Run Code</button>
                   <button className='btn btn-danger' onClick={clearSVG}>Clear SVG</button>
                 </span>
-                
                 <Editor
                   id='playground_editor'
                   height='50vh'
@@ -79,7 +76,6 @@ class Playground extends React.Component{
                 </div>
               </Col>
               <Col xs={12} lg={6}>
-                <h6>Below is an svg with id="out".</h6>
                 <svg id='out' height='80vh' width='100%'>
                 </svg>
               </Col>
