@@ -4,10 +4,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 import * as d3 from 'd3';
 import { Console, Hook, Decode } from 'console-feed'
 
-//Navbar imports
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Editor from '@monaco-editor/react';
 
@@ -45,13 +42,6 @@ class Playground extends React.Component{
 
     return (
       <>
-        <Navbar bg='dark' variant='dark' sticky='top'>
-        <Nav >
-            <NavLink className='nav-link page-logo' to="/"></NavLink>
-            <NavLink className='nav-link' to="/" ><h5 style={{marginTop: 10}}>Home</h5></NavLink>
-            <NavLink className='nav-link active' to="/playground" ><h5 style={{marginTop: 10}}>Playground</h5></NavLink>
-          </Nav>
-        </Navbar>
         <div className="App">
           <Container>
             <Row>
@@ -60,7 +50,11 @@ class Playground extends React.Component{
                 Welcome to the Margay Playground.
               </p>
             </header>
-
+            </Row>
+            <Row>
+              <Col style={{textAlign: 'left'}}>
+                <p><Link to='/'>Back to Homepage</Link></p>
+              </Col>
             </Row>
             <Row>
               <Col xs={12} lg={6}>

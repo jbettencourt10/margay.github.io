@@ -5,7 +5,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 //Navbar imports
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,13 +15,6 @@ class Bar extends React.Component {
     render(){
         return (
             <>
-              <Navbar bg='dark' variant='dark' sticky='top'>
-              <Nav >
-                  <NavLink className='nav-link page-logo' to="/"></NavLink>
-                  <NavLink className='nav-link active' to="/" ><h5 style={{marginTop: 10}}>Home</h5></NavLink>
-                  <NavLink className='nav-link' to="/playground" ><h5 style={{marginTop: 10}}>Playground</h5></NavLink>
-                </Nav>
-              </Navbar>
               <div className="App">
                 <Container>
                   <Row>
@@ -29,13 +22,30 @@ class Bar extends React.Component {
                       <p>Bar Charts</p>
                     </header>
                   </Row>
+                  <Row>
+                    <Col xs={0} lg={3}/>
+                    <Col xs={6} lg={3} style={{textAlign: 'left'}}>
+                      <p><Link to='/'>Back to Homepage</Link></p>
+                    </Col>
+                    <Col xs={6} lg={3}/>
+                    <Col xs={0} lg={3}/>
+                  </Row>
                   <Row style={{textAlign: 'left'}}>
                     <Col xs={12} lg={4} className='mx-auto'>
                       <p>
                         Add lesson here.
                       </p>
                     </Col>
-                    
+                  </Row>
+                  <Row>
+                    <Col xs={0} lg={3}/>
+                    <Col xs={6} lg={3} style={{textAlign: 'left'}}>
+                      <p><Link to='/chaining'>Previous Lesson</Link></p>
+                    </Col>
+                    <Col xs={6} lg={3} style={{textAlign: 'right'}}>
+                      <p><Link to='/scatter'>Next Lesson</Link></p>
+                    </Col>
+                    <Col xs={0} lg={3}/>
                   </Row>
                 </Container>
               </div>
