@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.2",
+    "console-feed": "^3.4.0",
     "d3": "^7.6.1",
     "fs": "^0.0.1-security",
     "react": "^18.2.0",

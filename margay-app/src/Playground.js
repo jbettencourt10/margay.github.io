@@ -2,6 +2,7 @@ import './App.css';
 
 import {Container, Row, Col} from 'react-bootstrap';
 import * as d3 from 'd3';
+import { Console, Hook, Decode } from 'console-feed'
 
 //Navbar imports
 import Nav from 'react-bootstrap/Nav';
@@ -18,6 +19,18 @@ import './App.css';
 import React, { useMemo } from 'react';
 
 class Playground extends React.Component{
+  state={
+    logs: []
+  }
+
+  componentDidMount(){
+    Hook(window.console, (log) => {
+      this.setState(({ logs }) => ({ logs: [...logs, Decode(log)] }))
+    })
+
+    console.log(`Console Output Will Display Here!`)
+  }
+
   render(){
     var currVal;
 
@@ -61,17 +74,20 @@ class Playground extends React.Component{
                 
                 <Editor
                   id='playground_editor'
-                  height='90vh'
+                  height='50vh'
                   defaultLanguage='javascript'
                   defaultValue='let svg = d3.select("#out");'
                   onChange={handleEditorChange}
                   theme='vs-dark'
                   loading=<Ghost size={300} mood='shocked' color='#FDA7DC'/>
                 />
+                <div style={{ backgroundColor: '#242424', paddingTop: 10}}>
+                  <Console logs={this.state.logs} variant="dark" />
+                </div>
               </Col>
               <Col xs={12} lg={6}>
                 <h6>Below is an svg with id="out".</h6>
-                <svg id='out' height='90vh' width='100%'>
+                <svg id='out' height='80vh' width='100%'>
                 </svg>
               </Col>
             </Row>
