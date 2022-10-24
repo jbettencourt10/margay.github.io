@@ -61,7 +61,7 @@ class Playground extends React.Component{
                 <span style={{float: 'left'}}><h6>Write your own code.</h6></span>
                 <span style={{float: 'right'}}>
                   
-                  <button className='btn btn-success' onClick={runCode}>Run Code</button>
+                  <button className='btn btn-success' style={{marginRight: 10}} onClick={runCode}>Run Code</button>
                   <button className='btn btn-danger' onClick={clearSVG}>Clear SVG</button>
                 </span>
                 
@@ -69,7 +69,7 @@ class Playground extends React.Component{
                   id='playground_editor'
                   height='50vh'
                   defaultLanguage='javascript'
-                  defaultValue='let svg = d3.select("#out");'
+                  defaultValue='let svg = d3.select("#out"); //Write your code below'
                   onChange={handleEditorChange}
                   theme='vs-dark'
                   loading=<Ghost size={300} mood='shocked' color='#FDA7DC'/>
