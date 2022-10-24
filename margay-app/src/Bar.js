@@ -2,10 +2,7 @@ import React from 'react';
 
 import {Container, Row, Col} from 'react-bootstrap';
 
-//Navbar imports
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
