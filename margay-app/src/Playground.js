@@ -1,4 +1,4 @@
-import './App.css';
+import React from 'react';
 
 import {Container, Row, Col} from 'react-bootstrap';
 import * as d3 from 'd3';
@@ -16,7 +16,6 @@ import {Ghost} from 'react-kawaii';
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import React, { useMemo } from 'react';
 
 class Playground extends React.Component{
   state={
