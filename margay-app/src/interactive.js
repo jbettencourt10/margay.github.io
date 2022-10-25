@@ -27,7 +27,7 @@ class InteractiveInterface extends React.Component {
     render(){
         return (
             <>
-                <Row>
+                <Row style={{paddingBottom: 10}}>
                     <Col xs={0} lg={1}/>
                     <Col xs={12} lg={5}>
                             <span style={{float: 'center'}}>
@@ -49,8 +49,8 @@ class InteractiveInterface extends React.Component {
                         <Console logs={this.state.logs} variant="dark" />
                         </div>
                     </Col>
-                    <Col xs={12} lg={5}>
-                        <svg id={this.svg_id} height='60vh' width='100%'>
+                    <Col xs={12} lg={5} style={{border: '1px solid white'}}>
+                        <svg id={this.svg_id} height='40vh' width='100%'>
                         </svg>
                     </Col>
                 </Row>
