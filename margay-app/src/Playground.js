@@ -13,6 +13,7 @@ import {Ghost} from 'react-kawaii';
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import InteractiveInterface from './interactive';
 
 class Playground extends React.Component{
   state={
@@ -56,30 +57,9 @@ class Playground extends React.Component{
                 <p><Link to='/'>Back to Homepage</Link></p>
               </Col>
             </Row>
-            <Row>
-              <Col xs={12} lg={6}>
-                <span style={{float: 'center'}}>
-                  <button className='btn btn-success' style={{marginRight: 10}} onClick={runCode}>Run Code</button>
-                  <button className='btn btn-danger' onClick={clearSVG}>Clear SVG</button>
-                </span>
-                <Editor
-                  id='playground_editor'
-                  height='50vh'
-                  defaultLanguage='javascript'
-                  defaultValue='let svg = d3.select("#out"); //Write your code below'
-                  onChange={handleEditorChange}
-                  theme='vs-dark'
-                  loading=<Ghost size={300} mood='shocked' color='#FDA7DC'/>
-                />
-                <div style={{ backgroundColor: '#242424', paddingTop: 10}}>
-                  <Console logs={this.state.logs} variant="dark" />
-                </div>
-              </Col>
-              <Col xs={12} lg={6}>
-                <svg id='out' height='80vh' width='100%'>
-                </svg>
-              </Col>
-            </Row>
+            <InteractiveInterface
+              svg_id={'out'}
+            />
           </Container>
 
 
