@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import {NavHeader, NavFooter} from './NavButtons';
+import LessonBlock from './Lesson';
 
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,14 +14,7 @@ class Tooltip extends React.Component {
               <div className="App">
                 <Container>
                   <NavHeader title='Tooltips'/>
-                  <Row style={{textAlign: 'left'}}>
-                    <Col xs={12} lg={10} className='mx-auto'>
-                      <p>
-                        Another useful technique for adding interactivity to your 
-                        visualizations is to use tooltips.
-                      </p>
-                    </Col>
-                  </Row>
+                  <LessonBlock lesson='lesson8'/>
                   <NavFooter prev='/animation' next='/choropleth'/>
                 </Container>
               </div>
