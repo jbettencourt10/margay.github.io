@@ -6,25 +6,20 @@ import { Link } from "react-router-dom";
 
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './App.scss';
+import { NavHeader } from './NavButtons';
 
 function App() {
   return (
     <>
       <div className="App">
         <Container>
-          <Row>
-            <header className="App-header">
-              <p>
-                Welcome to Margay.
-              </p>
-            </header>
-          </Row>
+          <NavHeader title='Welcome to Margay' home={true}/>
           <Row style={{textAlign: 'left'}}>
             <Col xs={12} lg={4} className='mx-auto'>
               <ol>
                 <li><Link to='/d3functions'>Basic D3 Methods</Link></li>
-                <li><Link to='/high order'>Higher Order Functions</Link></li>
+                <li><Link to='/highorder'>Higher Order Functions</Link></li>
                 <li><Link to='/scaling'>D3 Scaling Functions</Link></li>
                 <li><Link to='/chaining'>Chaining D3 Methods</Link></li>
                 <li><Link to='/bar'>Bar Charts</Link></li>

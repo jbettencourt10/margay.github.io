@@ -29,8 +29,8 @@ class InteractiveInterface extends React.Component {
             <>
                 <Row style={{paddingBottom: 10}}>
                     <Col xs={0} lg={1}/>
-                    <Col xs={12} lg={5}>
-                            <span style={{float: 'center'}}>
+                    <Col xs={12} lg={5} style={{border: '1px solid white', borderRight: '0.5px solid white', paddingTop: '10px'}}>
+                        <span style={{float: 'center'}}>
                             <button className='btn btn-success' style={{marginRight: 10}} onClick={() => {
                                 try{ let func = new Function("d3",this.currVal); func(d3); } catch (err){ console.log(err) }
                             }}>Run Code</button>
@@ -43,13 +43,13 @@ class InteractiveInterface extends React.Component {
                             defaultValue={'let svg = d3.select("#' + this.svg_id + '"); //Write code below'}
                             onChange={value => {this.currVal = value}}
                             theme='vs-dark'
-                            loading=<Ghost size={300} mood='shocked' color='#FDA7DC'/>
+                            loading=<Ghost size={200} mood='shocked' color='#FDA7DC'/>
                         />
-                        <div style={{ backgroundColor: '#242424', paddingTop: 10}}>
+                        <div className='console-scroll' style={{ backgroundColor: '#242424', paddingTop: 10}}>
                         <Console logs={this.state.logs} variant="dark" />
                         </div>
                     </Col>
-                    <Col xs={12} lg={5} style={{border: '1px solid white'}}>
+                    <Col xs={12} lg={5} style={{border: '1px solid white', borderLeft: '0.5px solid white'}}>
                         <svg id={this.svg_id} height='40vh' width='100%'>
                         </svg>
                     </Col>

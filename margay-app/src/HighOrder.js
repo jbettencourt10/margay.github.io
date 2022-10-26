@@ -1,12 +1,10 @@
 import React from 'react';
-
 import {Container, Row, Col} from 'react-bootstrap';
-
-import { Link } from "react-router-dom";
+import { NavHeader, NavFooter } from './NavButtons';
 
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './App.scss';
 
 class HighOrder extends React.Component {
     render(){
@@ -14,19 +12,7 @@ class HighOrder extends React.Component {
             <>
               <div className="App">
                 <Container>
-                  <Row>
-                    <header className="App-header">
-                      <p>Higher Order Functions</p>
-                    </header>
-                  </Row>
-                  <Row>
-                    <Col xs={0} lg={3}/>
-                    <Col xs={6} lg={3} style={{textAlign: 'left'}}>
-                      <p><Link to='/'>Back to Homepage</Link></p>
-                    </Col>
-                    <Col xs={6} lg={3}/>
-                    <Col xs={0} lg={3}/>
-                  </Row>
+                  <NavHeader title='Higher Order Functions'/>
                   <Row style={{textAlign: 'left'}}>
                     <Col xs={12} lg={4} className='mx-auto'>
                       <p>
@@ -34,16 +20,7 @@ class HighOrder extends React.Component {
                       </p>
                     </Col>
                   </Row>
-                  <Row>
-                    <Col xs={0} lg={3}/>
-                    <Col xs={6} lg={3} style={{textAlign: 'left'}}>
-                      <p><Link to='/d3functions'>Previous Lesson</Link></p>
-                    </Col>
-                    <Col xs={6} lg={3} style={{textAlign: 'right'}}>
-                      <p><Link to='/scaling'>Next Lesson</Link></p>
-                    </Col>
-                    <Col xs={0} lg={3}/>
-                  </Row>
+                  <NavFooter prev='/d3functions' next='/scaling'/>
                 </Container>
               </div>
             </>

@@ -20,6 +20,8 @@ body {
 }
 
 .App-header {
+  padding-top: 20px;
+  text-align: center;
   font-size: calc(10px + 2vmin);
 }
 
@@ -29,10 +31,54 @@ body {
 
 a {
   color: #ccc;
+
+  display: block;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: all .3s cubic-bezier(.2, 0, 0, 1);
+  z-index: 1;
+  text-align: center;
+  
+  
+  &:after {
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 0.5rem;
+    left: 0.5rem;
+    background-color: #ffffff;
+    transition: all .3s cubic-bezier(.2, 0, 0, 1);
+    transform-origin: bottom center;
+    z-index: -1;
+    white-space: nowrap;
+  }
+  
+  &:hover {
+    color: #2D2D2D;
+    
+    &:after {
+      right: 0;
+      left: 0;
+      height: 100%;
+    }
+  }
+}
+
+ol{
+  list-style-type: none;
+  display: table;
+  margin: 0 auto;
 }
 
 a:hover {
-  color: #ddddff;
+  color: #222288;
 }
 
 .btn-success {
@@ -66,4 +112,9 @@ a:hover {
   to {
     transform: rotate(360deg);
   }
+}
+
+.console-scroll {
+  max-height: 75px;
+  overflow-y: scroll;
 }

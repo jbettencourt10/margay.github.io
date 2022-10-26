@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './App.scss';
 
 class Tooltip extends React.Component {
     render(){
@@ -20,29 +20,27 @@ class Tooltip extends React.Component {
                     </header>
                   </Row>
                   <Row>
-                    <Col xs={0} lg={3}/>
+                    <Col xs={0} lg={1}/>
                     <Col xs={6} lg={3} style={{textAlign: 'left'}}>
                       <p><Link to='/'>Back to Homepage</Link></p>
                     </Col>
-                    <Col xs={6} lg={3}/>
-                    <Col xs={0} lg={3}/>
                   </Row>
                   <Row style={{textAlign: 'left'}}>
-                    <Col xs={12} lg={4} className='mx-auto'>
+                    <Col xs={12} lg={10} className='mx-auto'>
                       <p>
-                        Add lesson here.
+                        Another useful technique for adding interactivity to your 
+                        visualizations is to use tooltips.
                       </p>
                     </Col>
                   </Row>
                   <Row>
-                    <Col xs={0} lg={3}/>
-                    <Col xs={6} lg={3} style={{textAlign: 'left'}}>
+                    <Col xs={0} lg={1}/>
+                    <Col xs={6} lg={5} style={{textAlign: 'left'}}>
                       <p><Link to='/animation'>Previous Lesson</Link></p>
                     </Col>
-                    <Col xs={6} lg={3} style={{textAlign: 'right'}}>
+                    <Col xs={6} lg={5} style={{textAlign: 'right'}}>
                       <p><Link to='/choropleth'>Next Lesson</Link></p>
                     </Col>
-                    <Col xs={0} lg={3}/>
                   </Row>
                 </Container>
               </div>
