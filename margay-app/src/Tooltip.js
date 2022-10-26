@@ -1,8 +1,6 @@
 import React from 'react';
-
 import {Container, Row, Col} from 'react-bootstrap';
-
-import { Link } from "react-router-dom";
+import {NavHeader, NavFooter} from './NavButtons';
 
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,17 +12,7 @@ class Tooltip extends React.Component {
             <>
               <div className="App">
                 <Container>
-                  <Row>
-                    <header className="App-header">
-                      <p>Tooltips</p>
-                    </header>
-                  </Row>
-                  <Row>
-                    <Col xs={0} lg={1}/>
-                    <Col xs={6} lg={3} style={{textAlign: 'left'}}>
-                      <p><Link to='/'>Back to Homepage</Link></p>
-                    </Col>
-                  </Row>
+                  <NavHeader title='Tooltips'/>
                   <Row style={{textAlign: 'left'}}>
                     <Col xs={12} lg={10} className='mx-auto'>
                       <p>
@@ -33,15 +21,7 @@ class Tooltip extends React.Component {
                       </p>
                     </Col>
                   </Row>
-                  <Row>
-                    <Col xs={0} lg={1}/>
-                    <Col xs={6} lg={5} style={{textAlign: 'left'}}>
-                      <p><Link to='/animation'>Previous Lesson</Link></p>
-                    </Col>
-                    <Col xs={6} lg={5} style={{textAlign: 'right'}}>
-                      <p><Link to='/choropleth'>Next Lesson</Link></p>
-                    </Col>
-                  </Row>
+                  <NavFooter prev='/animation' next='/choropleth'/>
                 </Container>
               </div>
             </>
