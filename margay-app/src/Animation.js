@@ -24,9 +24,7 @@ class Animation extends React.Component {
                       </p>
                     </Col>
                   </Row>
-                  <InteractiveInterface 
-                    svg_id='animation1'
-                  />
+                  <InteractiveInterface svg_id='animation1'/>
                   <NavFooter prev='/scatter' next='/tooltip'/>
                 </Container>
               </div>

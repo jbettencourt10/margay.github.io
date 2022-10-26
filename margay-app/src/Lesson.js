@@ -1,6 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import {Row, Col} from 'react-bootstrap';
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 import lesson1 from './lessons/01_using_d3_methods.md';
 import lesson2 from './lessons/02_using_higher_order.md';
@@ -12,49 +12,40 @@ import lesson7 from './lessons/07_animation_transitions.md';
 import lesson8 from './lessons/08_tooltip.md';
 import lesson9 from './lessons/09_choropleth.md';
 
-class LessonBlock extends React.Component{
-    constructor(props){
-        super()
-        switch(props.lesson){
-            case 'lesson1': this.lesson = lesson1; break;
-            case 'lesson2': this.lesson = lesson2; break;
-            case 'lesson3': this.lesson = lesson3; break;
-            case 'lesson4': this.lesson = lesson4; break;
-            case 'lesson5': this.lesson = lesson5; break;
-            case 'lesson6': this.lesson = lesson6; break;
-            case 'lesson7': this.lesson = lesson7; break;
-            case 'lesson8': this.lesson = lesson8; break;
-            case 'lesson9': this.lesson = lesson9; break;
-            default: this.lesson = undefined;
+function LessonBlock(lesson){
+        const [post, setPost] = useState('');
+        var lessonPath;
+
+        switch(lesson){
+            case 'lesson1': lessonPath = lesson1; break;
+            case 'lesson2': lessonPath = lesson2; break;
+            case 'lesson3': lessonPath = lesson3; break;
+            case 'lesson4': lessonPath = lesson4; break;
+            case 'lesson5': lessonPath = lesson5; break;
+            case 'lesson6': lessonPath = lesson6; break;
+            case 'lesson7': lessonPath = lesson7; break;
+            case 'lesson8': lessonPath = lesson8; break;
+            case 'lesson9': lessonPath = lesson9; break;
+            default: lessonPath = undefined;
         }
 
-        this.text = undefined;
-        this.loaded = false;
-    }
-
-    componentDidMount(){
-        fetch(this.lesson).then((response) => response.text()).then((text) => {
-            this.text = text;
-            this.loaded = true
+        useEffect(() => {
+            fetch(lessonPath).then((response) => response.text()).then((text) => {
+                setPost(text)
+            })
         })
 
-        
-    }
-
-    render(){
-        if (!this.loaded) {
-            return null;
-        }
+        //if(this.state.text === undefined) return null;
         return (
                 <>
                     <Row style={{textAlign: 'left', paddingLeft: '0.5rem', paddingRight: '0.5rem'}}>
                         <Col xs={12} lg={10} className='mx-auto'>
-                            <ReactMarkdown source={this.text}>This</ReactMarkdown>
+                            <ReactMarkdown>{post}</ReactMarkdown>
                         </Col>
                     </Row>
                 </>
             );
-    }
+
 }
 
 export default LessonBlock
