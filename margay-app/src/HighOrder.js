@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 import { NavHeader, NavFooter } from './NavButtons';
 import LessonBlock from './Lesson';
 
@@ -18,7 +18,6 @@ function HighOrder() {
                 </Container>
               </div>
             </>
-            
           );
   
 }

@@ -9,6 +9,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import { NavHeader } from './NavButtons';
 
+var pages = [
+  {title: 'Basic D3 Methods', route: '/d3functions', cls: 'page-link'},
+  {title: 'Higher Order Functions', route: '/highorder', cls: 'page-link'},
+  {title: 'D3 Scaling Functions', route: '/scaling', cls: 'page-link'},
+  {title: 'Chaining D3 Methods', route: '/chaining', cls: 'page-link'},
+  {title: 'Bar Charts', route: '/bar', cls: 'page-link'},
+  {title: 'Scatter Plots', route: '/scatter', cls: 'page-link'},
+  {title: 'Animations and Transitions', route: '/animation', cls: 'page-link'},
+  {title: 'Tooltips', route: '/tooltip', cls: 'page-link'},
+  {title: 'Advanced: Choropleth Maps', route: '/choropleth', cls: 'page-link'},
+  {title: 'Margay Playground', route: '/playground', cls: 'page-link playground'}
+]
+
 function App() {
   return (
     <>
@@ -18,16 +31,7 @@ function App() {
           <Row style={{textAlign: 'left'}}>
             <Col xs={12} lg={4} className='mx-auto'>
               <ol>
-                <li><Link to='/d3functions'>Basic D3 Methods</Link></li>
-                <li><Link to='/highorder'>Higher Order Functions</Link></li>
-                <li><Link to='/scaling'>D3 Scaling Functions</Link></li>
-                <li><Link to='/chaining'>Chaining D3 Methods</Link></li>
-                <li><Link to='/bar'>Bar Charts</Link></li>
-                <li><Link to='/scatter'>Scatter Plots</Link></li>
-                <li><Link to='/animation'>Animations and Transitions</Link></li>
-                <li><Link to='/tooltip'>Tooltips</Link></li>
-                <li><Link to='/choropleth'>Advanced: Choropleth Maps in D3</Link></li>
-                <li><Link to='/playground'>Margay Playground</Link></li>
+                {pages.map((page,i) => (<li key={'li'+i}><Link className={page.cls} to={page.route}>{page.title}</Link></li>))}
               </ol>
             </Col>
             

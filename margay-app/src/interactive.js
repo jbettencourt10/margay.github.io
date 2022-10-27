@@ -11,14 +11,14 @@ class InteractiveInterface extends React.Component {
 
     constructor(props){
         super()
-        this.state = { logs: [] };
+        this.state = {logs: []};
         this.svg_id = props.svg_id;
         this.currVal = '';
     }
 
     componentDidMount(){
         Hook(window.console, (log) => {
-          this.setState(({ logs }) => ({ logs: [...logs, Decode(log)] }))
+          this.setState(({logs}) => ({logs: [...logs,Decode(log)]}));
         })
   
         console.log(`Console Output Will Display Here!`)
@@ -32,6 +32,8 @@ class InteractiveInterface extends React.Component {
                     <Col xs={12} lg={5} style={{border: '1px solid white', borderRight: '0.5px solid white', paddingTop: '10px'}}>
                         <span style={{float: 'center'}}>
                             <button className='btn btn-success' style={{marginRight: 10}} onClick={() => {
+                                this.state.logs = [];
+                                console.log(`Console Output Will Display Here!`)
                                 try{ let func = new Function("d3",this.currVal); func(d3); } catch (err){ console.log(err) }
                             }}>Run Code</button>
                             <button className='btn btn-danger' onClick={() => d3.select('#'+ this.svg_id).selectAll('*').remove()}>Clear SVG</button>

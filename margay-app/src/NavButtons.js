@@ -17,7 +17,7 @@ class NavHeader extends React.Component{
                 <Row>
                     <Col xs={0} lg={1}/>
                     <Col xs={5} lg={3} style={{textAlign: 'left'}}>
-                        <p><Link to='/'>Back to Homepage</Link></p>
+                        <p><Link className='page-link' to='/'>Back to Homepage</Link></p>
                     </Col>
                 </Row>
             </>
@@ -45,14 +45,16 @@ class NavFooter extends React.Component {
         super()
         this.prev = props.prev;
         this.next = props.next;
+        if(props.nextText) this.nextText = props.nextText; else this.nextText = 'Next Lesson'
+        if(props.classes) this.additionalClasses = props.classes;
     }
 
     generatePrev(){
-        if(this.prev != undefined) return (<><p><Link to={this.prev}>Previous Lesson</Link></p></>);
+        if(this.prev != undefined) return (<><p><Link className='page-link' to={this.prev}>Previous Lesson</Link></p></>);
     }
 
     generateNext(){
-        if(this.prev != undefined) return (<><p><Link to={this.next}>Next Lesson</Link></p></>);
+        if(this.next != undefined) return (<><p><Link className={'page-link ' + this.additionalClasses} to={this.next}>{this.nextText}</Link></p></>);
     }
 
     render(){

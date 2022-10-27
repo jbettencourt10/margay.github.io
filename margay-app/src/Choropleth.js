@@ -1,33 +1,24 @@
 import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import { NavHeader, NavFooter } from './NavButtons';
+import LessonBlock from './Lesson';
 
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 
-class Choropleth extends React.Component {
-    render(){
+function Choropleth(){
         return (
             <>
               <div className="App">
                 <Container>
-                  <NavHeader title='Advanced: Choropleth Maps in D3'/>
-                  <Row style={{textAlign: 'left'}}>
-                    <Col xs={12} lg={10} className='mx-auto'>
-                      <p>
-                        Add lesson here.
-                      </p>
-                    </Col>
-                  </Row>
-                  <NavFooter prev='/tooltip' next='/playground'/>
+                  <NavHeader title='Advanced: Choropleth Maps'/>
+                  {LessonBlock('lesson9')}
+                  <NavFooter prev='/tooltip' next='/playground' nextText='To Playground' classes='playground' />
                 </Container>
               </div>
             </>
-            
           );
-    }
-  
 }
 
 export default Choropleth;
