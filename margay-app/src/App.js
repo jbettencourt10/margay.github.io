@@ -31,7 +31,7 @@ function App() {
           <Row style={{textAlign: 'left'}}>
             <Col xs={12} lg={4} className='mx-auto'>
               <ol>
-                {pages.map((page,i) => (<li key={'li'+i}><Link className={page.cls} to={page.route}>{page.title}</Link></li>))}
+                {pages.map((page,i) => (<li key={'li'+i}><Link className={page.cls} to={'/page'+page.route}>{page.title}</Link></li>))}
               </ol>
             </Col>
             

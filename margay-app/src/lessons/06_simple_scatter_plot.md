@@ -1,1 +1,1 @@
-Add lesson here.
+Scatter Plots

@@ -27,7 +27,10 @@ function LessonBlock(lesson){
             })
         })
 
-        return (
+        if(lessonPath === undefined){
+            return
+        }
+        else return (
             <>
                 <Row style={{textAlign: 'left', paddingLeft: '0.5rem', paddingRight: '0.5rem'}}>
                     <Col xs={12} lg={10} className='mx-auto'>
