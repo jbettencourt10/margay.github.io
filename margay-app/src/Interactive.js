@@ -5,6 +5,8 @@ import * as d3 from 'd3';
 
 import { Console, Hook, Decode } from 'console-feed';
 import React from 'react';
+import defaultTexts from './defaultTexts';
+
 
 class InteractiveInterface extends React.Component {
     state; currVal; svg_id;
@@ -14,6 +16,7 @@ class InteractiveInterface extends React.Component {
         this.state = {logs: []};
         this.svg_id = props.svg_id;
         this.currVal = '';
+        this.defaultText = defaultTexts[props.textId];
     }
 
     componentDidMount(){
@@ -42,10 +45,10 @@ class InteractiveInterface extends React.Component {
                             id='playground_editor'
                             height='30vh'
                             defaultLanguage='javascript'
-                            defaultValue={'let svg = d3.select("#' + this.svg_id + '"); //Write code below'}
+                            defaultValue={this.defaultText}
                             onChange={value => {this.currVal = value}}
                             theme='vs-dark'
-                            loading=<Ghost size={200} mood='shocked' color='#FDA7DC'/>
+                            loading=<Ghost size={150} mood='shocked' color='#FDA7DC'/>
                         />
                         <div className='console-scroll' style={{ backgroundColor: '#242424', paddingTop: 10}}>
                         <Console logs={this.state.logs} variant="dark" />
@@ -56,8 +59,6 @@ class InteractiveInterface extends React.Component {
                         </svg>
                     </Col>
                 </Row>
-    
-                
             </>
         )
     }

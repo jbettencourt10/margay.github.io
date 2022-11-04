@@ -1,7 +1,7 @@
 {
     "d3functions": {
         "title": "Basic D3 Methods",           
-        "lesson": "lesson1", 
+        "lesson": "l1", 
         "prev": null,           
         "next": "/page/highorder",  
         "nextText": null,       
@@ -9,7 +9,7 @@
     },
     "highorder": {
         "title": "Higher Order Functions",     
-        "lesson": "lesson2", 
+        "lesson": "l2", 
         "prev": "/page/d3functions", 
         "next": "/page/scaling",    
         "nextText": null,       
@@ -17,7 +17,7 @@
     },
     "scaling": {
         "title": "D3 Scaling Functions",       
-        "lesson": "lesson3", 
+        "lesson": "l3", 
         "prev": "/page/highorder",   
         "next": "/page/chaining",   
         "nextText": null,       
@@ -25,7 +25,7 @@
     },
     "chaining": {
         "title": "Chaining D3 Methods",        
-        "lesson": "lesson4", 
+        "lesson": "l4", 
         "prev": "/page/scaling",     
         "next": "/page/bar",        
         "nextText": null,       
@@ -33,7 +33,7 @@
     },
     "bar": {
         "title": "Bar Charts",                 
-        "lesson": "lesson5", 
+        "lesson": "l5", 
         "prev": "/page/chaining",    
         "next": "/page/scatter",    
         "nextText": null,       
@@ -41,7 +41,7 @@
     },
     "scatter": {
         "title": "Scatter Plots",              
-        "lesson": "lesson6", 
+        "lesson": "l6", 
         "prev": "/page/bar",         
         "next": "/page/animation",  
         "nextText": null,       
@@ -49,7 +49,7 @@
     },
     "animation": {
         "title": "Animations and Transitions", 
-        "lesson": "lesson7", 
+        "lesson": "l7", 
         "prev": "/page/scatter",     
         "next": "/page/tooltip",    
         "nextText": null,       
@@ -57,7 +57,7 @@
     },
     "tooltip": {
         "title": "Tooltips",                   
-        "lesson": "lesson8", 
+        "lesson": "l8", 
         "prev": "/page/animation",   
         "next": "/page/choropleth", 
         "nextText": null,       
@@ -65,7 +65,7 @@
     },
     "choropleth": {
         "title": "Advanced: Choropleth Maps",  
-        "lesson": "lesson9", 
+        "lesson": "l9", 
         "prev": "/page/tooltip",     
         "next": "/page/playground", 
         "nextText": "To Playground", 
