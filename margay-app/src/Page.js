@@ -6,7 +6,7 @@ import LessonBlock from './Lesson';
 //Styling
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
-import InteractiveInterface from './interactive';
+import InteractiveInterface from './Interactive';
 
 const pages = {
     d3functions: {title: 'Basic D3 Methods',           lesson: 'lesson1', prev: undefined,           next: '/page/highorder',  nextText: undefined,       classes: undefined},
