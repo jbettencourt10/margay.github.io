@@ -5,12 +5,15 @@ import './index.css';
 import App from './App';
 import Page from "./Page";
 import reportWebVitals from './reportWebVitals';
+import pages from './pages.json';
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const UsePage = () => {
   const { p } = useParams();
-  return Page(p);
+  let props = pages[p]
+  props.key = p;
+  return Page(props);
 }
 
 

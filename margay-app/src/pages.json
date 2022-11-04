@@ -1,0 +1,82 @@
+{
+    "d3functions": {
+        "title": "Basic D3 Methods",           
+        "lesson": "lesson1", 
+        "prev": null,           
+        "next": "/page/highorder",  
+        "nextText": null,       
+        "classes": null
+    },
+    "highorder": {
+        "title": "Higher Order Functions",     
+        "lesson": "lesson2", 
+        "prev": "/page/d3functions", 
+        "next": "/page/scaling",    
+        "nextText": null,       
+        "classes": null
+    },
+    "scaling": {
+        "title": "D3 Scaling Functions",       
+        "lesson": "lesson3", 
+        "prev": "/page/highorder",   
+        "next": "/page/chaining",   
+        "nextText": null,       
+        "classes": null 
+    },
+    "chaining": {
+        "title": "Chaining D3 Methods",        
+        "lesson": "lesson4", 
+        "prev": "/page/scaling",     
+        "next": "/page/bar",        
+        "nextText": null,       
+        "classes": null
+    },
+    "bar": {
+        "title": "Bar Charts",                 
+        "lesson": "lesson5", 
+        "prev": "/page/chaining",    
+        "next": "/page/scatter",    
+        "nextText": null,       
+        "classes": null
+    },
+    "scatter": {
+        "title": "Scatter Plots",              
+        "lesson": "lesson6", 
+        "prev": "/page/bar",         
+        "next": "/page/animation",  
+        "nextText": null,       
+        "classes": null
+    },
+    "animation": {
+        "title": "Animations and Transitions", 
+        "lesson": "lesson7", 
+        "prev": "/page/scatter",     
+        "next": "/page/tooltip",    
+        "nextText": null,       
+        "classes": null
+    },
+    "tooltip": {
+        "title": "Tooltips",                   
+        "lesson": "lesson8", 
+        "prev": "/page/animation",   
+        "next": "/page/choropleth", 
+        "nextText": null,       
+        "classes": null
+    },
+    "choropleth": {
+        "title": "Advanced: Choropleth Maps",  
+        "lesson": "lesson9", 
+        "prev": "/page/tooltip",     
+        "next": "/page/playground", 
+        "nextText": "To Playground", 
+        "classes": "playground"
+    },
+    "playground": {
+        "title": "Margay Playground",          
+        "lesson": null, 
+        "prev": "/page/choropleth",  
+        "next": null,          
+        "nextText": null,       
+        "classes": null
+    }
+  }
