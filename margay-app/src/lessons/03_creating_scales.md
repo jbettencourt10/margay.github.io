@@ -1,1 +1,1 @@
-Creating Scales
+# Creating Scales with D3
