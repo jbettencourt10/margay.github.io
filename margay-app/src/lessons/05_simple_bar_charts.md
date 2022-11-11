@@ -1,4 +1,4 @@
-### In this exercise, we will go over how to create a simple bar chart using the d3 library
+## In this exercise, we will go over how to create a simple bar chart using the d3 library
 
 This tutorial will go over the steps to create a basic bar chart with d3 with some code samples.
 
@@ -74,10 +74,10 @@ svg.selectAll("mybar")
     .attr("fill", "#69b3a2")
 ```
 
-## think
+### think
 Could you make the bar chart in a different color? 
 Could you make the bars right next to each other? (no gap between bars)
 Could you reorder the bars so the country are ordered by the amount of weapons sold to them, in descending order? in ascending order?
 Could you make each bar's color dependent on the amount of weapon it's representing?
 
-# tutorial from d3-graph-gallery.com
+### tutorial from d3-graph-gallery.com

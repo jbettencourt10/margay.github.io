@@ -1,4 +1,4 @@
-### In this exercise, we will go over how to create a simple scatter chart using the d3 library
+## In this exercise, we will go over how to create a simple scatter chart using the d3 library
 
 This tutorial will go over the steps to create a basic scatter chart with d3 with some code samples. Code samples that are identical to the previous lesson will not be shown again.
 
@@ -44,10 +44,10 @@ svg.append('g')
     .style("fill", "#69b3a2")
 ```
 
-## think
+### think
 Could you make the dots in a different color? 
 Could you make the dots bigger? smaller? into different shapes?
 If there is an additional attribute could you make the plot reflect that in addition to `GrLivArea` and `SalePrice`?
 Could you scale the data differently?
 
-# tutorial from d3-graph-gallery.com
+### tutorial from d3-graph-gallery.com
