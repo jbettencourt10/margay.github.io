@@ -42,6 +42,6 @@ console.log(pixelValue);
 
 This scale functionality works especially well with data visualizations.
 
-## You try:
+## Your task:
 - Create a linear scale that maps the data value 25 to the pixel value 250 (using a different scale than above).
 - Create a time scale that maps the date January 1, 2016 to approximately the pixel value 250 (using a different scale than above).

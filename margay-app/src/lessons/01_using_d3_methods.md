@@ -30,7 +30,7 @@ The text method is used to set the text content of elements in the DOM. It retur
 ### style()
 The style method is used to set the style of elements in the DOM. It returns a selection of elements. The style method is most commonly used to set the style of SVG elements. The style method takes two arguments. The first argument is a string that matches the style you want to set. The second argument is a string that matches the value you want to set the style to. The style method returns a reference to the elements with the updated style.
 
-### You try:
-- Try using the select method to select the SVG element.
-- Then, try using the append method to add a circle to the SVG element.
-- Finally, try using the attr method to set the cx and cy attributes of the circle to 100 and the color to red.
+### Your task:
+- First, use the select method to select the SVG element.
+- After doing this, use the append method to add a circle to the SVG element.
+- Finally, use the attr method to set the cx and cy attributes of the circle to 100 and the color to red.

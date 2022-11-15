@@ -47,8 +47,7 @@ array.reduce(func);
 
 Higher order functions are very useful in Javascript. They allow you to write more concise code, and make your code more readable. They also allow you to write code that is more easily testable. You can test the function that you pass to the higher order function, and then test the higher order function with a mock function. This is a very powerful technique that is used in many Javascript libraries.
 
-## You try:
-
+## Your task:
 - Write a function that takes an array of numbers and returns an array of the squares of those numbers (using map).
 - Write a function that takes an array of numbers and returns an array of the even numbers (using filter).
 - Write a function that takes an array of numbers and returns the sum of those numbers (using reduce).
