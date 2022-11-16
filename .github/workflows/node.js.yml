@@ -26,5 +26,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: cd margay-app
     - run: npm install react-bootstrap bootstrap react-run-code
     - run: npm start
