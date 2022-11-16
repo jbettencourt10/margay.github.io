@@ -19,7 +19,7 @@ const UsePage = () => {
 
 const rootElement = ReactDOM.createRoot(document.getElementById("root"));
 rootElement.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route exact path='/' element={<App />}></Route>
       <Route exact path='/page/:p' element={<UsePage/>}/>
