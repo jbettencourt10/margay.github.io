@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Margay/static/css/main.5f9008a3.css",
-    "main.js": "/Margay/static/js/main.92c14266.js",
-    "static/js/787.283f5912.chunk.js": "/Margay/static/js/787.283f5912.chunk.js",
-    "static/media/01_using_d3_methods.md": "/Margay/static/media/01_using_d3_methods.ee5c0da127714bb2cc69.md",
-    "static/media/05_simple_bar_charts.md": "/Margay/static/media/05_simple_bar_charts.36c1fe013ac0cb1c9488.md",
-    "static/media/03_creating_scales.md": "/Margay/static/media/03_creating_scales.a33e7f648aac38038818.md",
-    "static/media/02_using_higher_order.md": "/Margay/static/media/02_using_higher_order.cb875b35118a9c86f8ec.md",
-    "static/media/06_simple_scatter_plot.md": "/Margay/static/media/06_simple_scatter_plot.26487681d9b499f668c8.md",
-    "static/media/04_chaining_methods.md": "/Margay/static/media/04_chaining_methods.57a1741026a21e2bb251.md",
-    "index.html": "/Margay/index.html",
-    "static/media/08_tooltip.md": "/Margay/static/media/08_tooltip.001b17e136ac1bbe97b2.md",
-    "static/media/07_animation_transitions.md": "/Margay/static/media/07_animation_transitions.8edbcd882d422c437c47.md",
-    "static/media/09_choropleth.md": "/Margay/static/media/09_choropleth.7ac8a597ac095f28e293.md",
-    "main.5f9008a3.css.map": "/Margay/static/css/main.5f9008a3.css.map",
-    "main.92c14266.js.map": "/Margay/static/js/main.92c14266.js.map",
-    "787.283f5912.chunk.js.map": "/Margay/static/js/787.283f5912.chunk.js.map"
+    "main.css": "/static/css/main.5f9008a3.css",
+    "main.js": "/static/js/main.d660f6af.js",
+    "static/js/787.283f5912.chunk.js": "/static/js/787.283f5912.chunk.js",
+    "static/media/01_using_d3_methods.md": "/static/media/01_using_d3_methods.ee5c0da127714bb2cc69.md",
+    "static/media/05_simple_bar_charts.md": "/static/media/05_simple_bar_charts.36c1fe013ac0cb1c9488.md",
+    "static/media/03_creating_scales.md": "/static/media/03_creating_scales.a33e7f648aac38038818.md",
+    "static/media/02_using_higher_order.md": "/static/media/02_using_higher_order.cb875b35118a9c86f8ec.md",
+    "static/media/06_simple_scatter_plot.md": "/static/media/06_simple_scatter_plot.26487681d9b499f668c8.md",
+    "static/media/04_chaining_methods.md": "/static/media/04_chaining_methods.57a1741026a21e2bb251.md",
+    "index.html": "/index.html",
+    "static/media/08_tooltip.md": "/static/media/08_tooltip.001b17e136ac1bbe97b2.md",
+    "static/media/07_animation_transitions.md": "/static/media/07_animation_transitions.8edbcd882d422c437c47.md",
+    "static/media/09_choropleth.md": "/static/media/09_choropleth.7ac8a597ac095f28e293.md",
+    "main.5f9008a3.css.map": "/static/css/main.5f9008a3.css.map",
+    "main.d660f6af.js.map": "/static/js/main.d660f6af.js.map",
+    "787.283f5912.chunk.js.map": "/static/js/787.283f5912.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f9008a3.css",
-    "static/js/main.92c14266.js"
+    "static/js/main.d660f6af.js"
   ]
 }
