@@ -15,8 +15,7 @@ class InteractiveInterface extends React.Component {
         super()
         this.state = {logs: []};
         this.svg_id = props.svg_id;
-        this.currVal = '';
-        this.defaultText = defaultTexts[props.textId];
+        this.currVal = defaultTexts[props.textId];
     }
 
     componentDidMount(){
@@ -45,7 +44,7 @@ class InteractiveInterface extends React.Component {
                             id='playground_editor'
                             height='30vh'
                             defaultLanguage='javascript'
-                            defaultValue={this.defaultText}
+                            defaultValue={this.currVal}
                             onChange={value => {this.currVal = value}}
                             theme='vs-dark'
                             loading=<Ghost size={150} mood='shocked' color='#FDA7DC'/>

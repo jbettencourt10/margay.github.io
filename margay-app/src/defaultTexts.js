@@ -21,6 +21,7 @@ const defaultTexts = [
 svg.selectAll('*').remove()
 
 svg.append('rect')
+    .attr('class','rects')
     .attr('x',10)
     .attr('y',10)
     .attr('rx', 100)
@@ -30,7 +31,7 @@ svg.append('rect')
     .attr('stroke', '#234362')
     .attr('fill', '#234362')
     
-svg.selectAll('rect').transition().duration(1000).attr('x',200).attr('rx',10).attr('ry',10)`,
+svg.selectAll('.rects').transition().duration(1000).attr('x',200).attr('rx',10).attr('ry',10)`,
 
     `let svg = d3.select("#tooltip"); 
 //Write code below`,
