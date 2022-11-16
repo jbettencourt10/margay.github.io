@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/margay/static/css/main.5f9008a3.css",
+    "main.js": "/margay/static/js/main.050bbe3d.js",
+    "static/js/787.283f5912.chunk.js": "/margay/static/js/787.283f5912.chunk.js",
+    "static/media/01_using_d3_methods.md": "/margay/static/media/01_using_d3_methods.ee5c0da127714bb2cc69.md",
+    "static/media/05_simple_bar_charts.md": "/margay/static/media/05_simple_bar_charts.36c1fe013ac0cb1c9488.md",
+    "static/media/03_creating_scales.md": "/margay/static/media/03_creating_scales.a33e7f648aac38038818.md",
+    "static/media/02_using_higher_order.md": "/margay/static/media/02_using_higher_order.cb875b35118a9c86f8ec.md",
+    "static/media/06_simple_scatter_plot.md": "/margay/static/media/06_simple_scatter_plot.26487681d9b499f668c8.md",
+    "static/media/04_chaining_methods.md": "/margay/static/media/04_chaining_methods.57a1741026a21e2bb251.md",
+    "index.html": "/margay/index.html",
+    "static/media/08_tooltip.md": "/margay/static/media/08_tooltip.001b17e136ac1bbe97b2.md",
+    "static/media/07_animation_transitions.md": "/margay/static/media/07_animation_transitions.8edbcd882d422c437c47.md",
+    "static/media/09_choropleth.md": "/margay/static/media/09_choropleth.7ac8a597ac095f28e293.md",
+    "main.5f9008a3.css.map": "/margay/static/css/main.5f9008a3.css.map",
+    "main.050bbe3d.js.map": "/margay/static/js/main.050bbe3d.js.map",
+    "787.283f5912.chunk.js.map": "/margay/static/js/787.283f5912.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f9008a3.css",
+    "static/js/main.050bbe3d.js"
+  ]
+}
