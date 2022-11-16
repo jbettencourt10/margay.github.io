@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Margay/static/css/main.5f9008a3.css",
-    "main.js": "/Margay/static/js/main.e783402f.js",
+    "main.js": "/Margay/static/js/main.92c14266.js",
     "static/js/787.283f5912.chunk.js": "/Margay/static/js/787.283f5912.chunk.js",
     "static/media/01_using_d3_methods.md": "/Margay/static/media/01_using_d3_methods.ee5c0da127714bb2cc69.md",
     "static/media/05_simple_bar_charts.md": "/Margay/static/media/05_simple_bar_charts.36c1fe013ac0cb1c9488.md",
@@ -14,11 +14,11 @@
     "static/media/07_animation_transitions.md": "/Margay/static/media/07_animation_transitions.8edbcd882d422c437c47.md",
     "static/media/09_choropleth.md": "/Margay/static/media/09_choropleth.7ac8a597ac095f28e293.md",
     "main.5f9008a3.css.map": "/Margay/static/css/main.5f9008a3.css.map",
-    "main.e783402f.js.map": "/Margay/static/js/main.e783402f.js.map",
+    "main.92c14266.js.map": "/Margay/static/js/main.92c14266.js.map",
     "787.283f5912.chunk.js.map": "/Margay/static/js/787.283f5912.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f9008a3.css",
-    "static/js/main.e783402f.js"
+    "static/js/main.92c14266.js"
   ]
 }
