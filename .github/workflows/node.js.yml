@@ -21,11 +21,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run: cd margay-app
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: margay-app/package-lock.json
+    - run: cd margay-app
     - run: npm install react-bootstrap bootstrap react-run-code
     - run: npm start
