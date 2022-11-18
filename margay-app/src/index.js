@@ -7,7 +7,7 @@ import Page from "./Page";
 import reportWebVitals from './reportWebVitals';
 import pages from './pages.json';
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, BrowserRouter, Route, Routes } from "react-router-dom";
 
 const UsePage = () => {
   const { p } = useParams();
@@ -19,12 +19,12 @@ const UsePage = () => {
 
 const rootElement = ReactDOM.createRoot(document.getElementById("root"));
 rootElement.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <HashRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route exact path='/' element={<App />}></Route>
       <Route exact path='/page/:p' element={<UsePage/>}/>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
