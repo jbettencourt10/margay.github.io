@@ -7,7 +7,7 @@ import Page from "./Page";
 import reportWebVitals from './reportWebVitals';
 import pages from './pages.json';
 
-import { HashRouter, BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 const UsePage = () => {
   const { p } = useParams();
