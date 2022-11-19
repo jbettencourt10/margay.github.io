@@ -17,7 +17,13 @@ function App() {
           <Row style={{textAlign: 'left'}}>
             <Col xs={12} lg={4} className='mx-auto'>
               <ol>
-                {Object.keys(pages).map((page,i) => (<li key={'li'+i}><Link className={(page === 'playground') ? 'page-link playground' : 'page-link'} to={'/page/'+page}>{pages[page].title}</Link></li>))}
+                {Object.keys(pages)
+                  .map((page,i) => 
+                    (<li key={'li'+i}>
+                      <Link className={(page === 'playground') ? 'page-link playground' : 'page-link'} to={'/page/'+page}>
+                          {`${pages[page].title} (Lesson ${i})`}
+                        </Link>
+                    </li>))}
               </ol>
             </Col>
             

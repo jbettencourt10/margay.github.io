@@ -42,7 +42,7 @@ class InteractiveInterface extends React.Component {
                         </span>
                         <Editor
                             id='playground_editor'
-                            height='30vh'
+                            height='60vh'
                             defaultLanguage='javascript'
                             defaultValue={this.currVal}
                             onChange={value => {this.currVal = value}}

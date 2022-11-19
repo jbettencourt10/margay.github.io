@@ -1,6 +1,6 @@
 {
     "d3functions": {
-        "title": "1.) Basic D3 Methods",
+        "title": "Basic D3 Methods",
         "lesson": "l1",
         "prev": null,
         "next": "/page/highorder",
@@ -8,7 +8,7 @@
         "classes": null
     },
     "highorder": {
-        "title": "2.) Higher Order Functions",
+        "title": "Higher Order Functions",
         "lesson": "l2",
         "prev": "/page/d3functions",
         "next": "/page/scaling",
@@ -16,7 +16,7 @@
         "classes": null
     },
     "scaling": {
-        "title": "3.) D3 Scaling Functions",
+        "title": "D3 Scaling Functions",
         "lesson": "l3",
         "prev": "/page/highorder",
         "next": "/page/chaining",
@@ -24,7 +24,7 @@
         "classes": null
     },
     "chaining": {
-        "title": "4.) Chaining D3 Methods",
+        "title": "Chaining D3 Methods",
         "lesson": "l4",
         "prev": "/page/scaling",
         "next": "/page/bar",
@@ -32,7 +32,7 @@
         "classes": null
     },
     "bar": {
-        "title": "5.) Bar Charts",
+        "title": "Bar Charts",
         "lesson": "l5",
         "prev": "/page/chaining",
         "next": "/page/scatter",
@@ -40,7 +40,7 @@
         "classes": null
     },
     "scatter": {
-        "title": "6.) Scatter Plots",
+        "title": "Scatter Plots",
         "lesson": "l6",
         "prev": "/page/bar",
         "next": "/page/animation",
@@ -48,7 +48,7 @@
         "classes": null
     },
     "animation": {
-        "title": "7.) Animations and Transitions",
+        "title": "Animations & Transitions",
         "lesson": "l7",
         "prev": "/page/scatter",
         "next": "/page/tooltip",
@@ -56,7 +56,7 @@
         "classes": null
     },
     "tooltip": {
-        "title": "8.) Tooltips",
+        "title": "Tooltips",
         "lesson": "l8",
         "prev": "/page/animation",
         "next": "/page/choropleth",
@@ -64,7 +64,7 @@
         "classes": null
     },
     "choropleth": {
-        "title": "9.) Advanced: Choropleth Maps",
+        "title": "Choropleth Maps",
         "lesson": "l9",
         "prev": "/page/tooltip",
         "next": "/page/playground",
