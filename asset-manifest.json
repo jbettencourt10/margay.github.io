@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/margayapp.github.io/static/css/main.45320bb3.css",
-    "main.js": "/margayapp.github.io/static/js/main.154f7aed.js",
+    "main.css": "/margayapp.github.io/static/css/main.dfa4c095.css",
+    "main.js": "/margayapp.github.io/static/js/main.a13c73c6.js",
     "static/js/787.283f5912.chunk.js": "/margayapp.github.io/static/js/787.283f5912.chunk.js",
     "static/media/01_using_d3_methods.md": "/margayapp.github.io/static/media/01_using_d3_methods.ee5c0da127714bb2cc69.md",
     "static/media/05_simple_bar_charts.md": "/margayapp.github.io/static/media/05_simple_bar_charts.36c1fe013ac0cb1c9488.md",
@@ -13,12 +13,12 @@
     "static/media/08_tooltip.md": "/margayapp.github.io/static/media/08_tooltip.001b17e136ac1bbe97b2.md",
     "static/media/07_animation_transitions.md": "/margayapp.github.io/static/media/07_animation_transitions.8edbcd882d422c437c47.md",
     "static/media/09_choropleth.md": "/margayapp.github.io/static/media/09_choropleth.7ac8a597ac095f28e293.md",
-    "main.45320bb3.css.map": "/margayapp.github.io/static/css/main.45320bb3.css.map",
-    "main.154f7aed.js.map": "/margayapp.github.io/static/js/main.154f7aed.js.map",
+    "main.dfa4c095.css.map": "/margayapp.github.io/static/css/main.dfa4c095.css.map",
+    "main.a13c73c6.js.map": "/margayapp.github.io/static/js/main.a13c73c6.js.map",
     "787.283f5912.chunk.js.map": "/margayapp.github.io/static/js/787.283f5912.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45320bb3.css",
-    "static/js/main.154f7aed.js"
+    "static/css/main.dfa4c095.css",
+    "static/js/main.a13c73c6.js"
   ]
 }
