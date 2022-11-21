@@ -15,6 +15,7 @@ function Page(props){
             <div className="App">
             <Container key={props.key}>
                 <NavHeader title={props.title}/>
+                <img className={'margay-logo'}src={process.env.PUBLIC_URL + '/margay_logo.png'} height={100} width={100}></img>
                 {LessonBlock(props.lesson)}
                 <InteractiveInterface svg_id={props.key} textId={props.lesson ? +props.lesson[1]-1 : 9} />
                 <NavFooter prev={props.prev} next={props.next} nextText={props.nextText} classes={props.classes} />

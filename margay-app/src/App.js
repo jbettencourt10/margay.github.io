@@ -9,11 +9,27 @@ import './App.scss';
 import { NavHeader } from './NavButtons';
 
 function App() {
+  var {innerWidth: width, innerHeight: height} = window;
+  var l = 0.25*Math.min(window.innerHeight, window.innerWidth);
+
+  React.useEffect(() => {
+    function handleResize() {
+      var {innerWidth: width, innerHeight: height} = window;
+      l = 0.25*Math.min(window.innerHeight, window.innerWidth);
+      let logo = document.getElementById('logo')
+      logo.height = l;
+      logo.width = l;
+    }
+
+    window.addEventListener('resize', handleResize)
+  })
+
   return (
     <>
       <div className="App">
         <Container>
           <NavHeader title='Welcome to Margay' home={true}/>
+          <img id={'logo'} className={'margay-logo'}src={process.env.PUBLIC_URL + '/margay_logo.png'} height={l} width={l}></img>
           <Row style={{textAlign: 'left'}}>
             <Col xs={12} lg={4} className='mx-auto'>
               <ol>
